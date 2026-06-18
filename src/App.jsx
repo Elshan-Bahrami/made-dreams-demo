@@ -1363,18 +1363,9 @@ useEffect(() => {
         <span>{categoryPageProducts.length} ürün listeleniyor</span>
       </div>
 
-      <button
-        onClick={() => {
-          setPage("home");
-          setTimeout(() => {
-           goToPage("upload")?.scrollIntoView({
-              behavior: "smooth",
-            });
-          }, 50);
-        }}
-      >
-        Kendi Tasarımını Yükle
-      </button>
+      <button onClick={() => goToPage("upload")}>
+  Kendi Tasarımını Yükle
+</button>
     </div>
 
     <div className="product-grid">
